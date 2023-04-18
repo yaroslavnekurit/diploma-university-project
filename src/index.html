@@ -4,9 +4,34 @@
 
 <body>
 	<div class="wrapper">
-		@@include('html/header.html',{})
+		<div class="container">
+			@@include('html/header.html',{})
+			<section class="main">
+				<section class="promo">
+					<h1 class="promo__title lang" key="title">Портреты Белорусских Университетов</h1>
+					<div class="promo__bottom">
+						<h2 class="promo__subtitle lang" key="subtitle">Коллекция NFT</h2>
+						<button class="promo__btn"><a href="" class="promo__btn-link">OpenSea</a></button>
+					</div>
+					<div class="promo__marquee">
+						<div class="promo__marquee-inner">
+							<p class="promo__marquee-text lang" key="marquee">// БГУКИ // БГМУ // БНТУ // БГЭУ // БГУИР
+								// БГУ </p>
+							<p class="promo__marquee-text lang" key="marquee">// БГУКИ // БГМУ // БНТУ // БГЭУ // БГУИР
+								// БГУ </p>
+							<p class="promo__marquee-text lang" key="marquee">// БГУКИ // БГМУ // БНТУ // БГЭУ // БГУИР
+								// БГУ </p>
+							<p class="promo__marquee-text lang" key="marquee">// БГУКИ // БГМУ // БНТУ // БГЭУ // БГУИР
+								// БГУ </p>
+							<p class="promo__marquee-text lang" key="marquee">// БГУКИ // БГМУ // БНТУ // БГЭУ // БГУИР
+								// БГУ </p>
+						</div>
+					</div>
+				</section>
+			</section>
 
-		@@include('html/footer.html',{})
+			@@include('html/footer.html',{})
+		</div>
 		<script src="js/app.min.js"></script>
 </body>
 

@@ -1,0 +1,23 @@
+.promo__marquee {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #000;
+	.promo__marquee-inner {
+		display: flex;
+	}
+	.promo__marquee-text {
+		white-space: nowrap;
+		flex-shrink: 0;
+		padding: 0 3px;
+		animation: promo__marquee 15s linear infinite;
+	}
+}
+
+@keyframes promo__marquee {
+	0% {
+		transform: translateZ(0%);
+	}
+	100% {
+		transform: translate3d(-100%, 0, 0);
+	}
+}

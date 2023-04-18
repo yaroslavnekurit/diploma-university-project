@@ -17,17 +17,26 @@ var arrLang = {
 	en: {
 		collection: 'Collection',
 		gallery: 'Gallery',
-		diploma: 'Diploma'
+		diploma: 'Diploma',
+		title: 'Portraits of Belarusian Universities',
+		subtitle: 'NFT Collection',
+		marquee: '// BGUKI // BGMU // BNTU // BGEU // BSUIR // BSU'
 	},
 	by: {
 		collection: 'Калекцыя',
 		gallery: 'Галерыя',
-		diploma: 'Дыплом'
+		diploma: 'Дыплом',
+		title: 'Партрэты Беларускіх Універсітэтаў',
+		subtitle: 'Калекцыя NFT',
+		marquee: '// БДУКІ // БДМУ // БНТУ // БДЭУ // БДУІР // БДУ'
 	},
 	ru: {
 		collection: 'Коллекция',
 		gallery: 'Галерия',
-		diploma: 'Диплом'
+		diploma: 'Диплом',
+		title: 'Портреты Белорусских Университетов',
+		subtitle: 'Коллекция NFT',
+		marquee: '/ БГУКИ // БГМУ // БНТУ // БГЭУ // БГУИР // БГУ'
 	}
 }
 
