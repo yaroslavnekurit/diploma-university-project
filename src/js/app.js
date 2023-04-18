@@ -13,54 +13,30 @@ import Swiper, { Autoplay, Navigation, Pagination } from 'swiper'
 
 const swiper = new Swiper()
 
+var arrLang = {
+	en: {
+		collection: 'Collection',
+		gallery: 'Gallery',
+		diploma: 'Diploma'
+	},
+	by: {
+		collection: 'Калекцыя',
+		gallery: 'Галерыя',
+		diploma: 'Дыплом'
+	},
+	ru: {
+		collection: 'Коллекция',
+		gallery: 'Галерия',
+		diploma: 'Диплом'
+	}
+}
+
 $(function () {
-	$('.header__btn').on('click', function () {
-		$('.rightside-menu').removeClass('rightside-menu--close')
+	$('.translate').click(function () {
+		var lang = $(this).attr('id')
+
+		$('.lang').each(function (index, item) {
+			$(this).text(arrLang[lang][$(this).attr('key')])
+		})
 	})
-	$('.rightside-menu__close').on('click', function () {
-		$('.rightside-menu').addClass('rightside-menu--close')
-	})
-
-	$('.top__slider').slick({
-		dots: true,
-		arrows: false,
-		fade: true,
-		autoplay: true
-	})
-
-	$('.contact-slider').slick({
-		slidesToShow: 10,
-		slidesToScroll: 10,
-		dots: true,
-		arrows: false
-	})
-
-	$('.article-slider__box').slick({
-		arrows: true,
-		prevArrow:
-			"<button type='button' class='article-slider__arrow article-slider__arrowback'></button>",
-		nextArrow:
-			"<button type='button' class='article-slider__arrow article-slider__arrownext'></button>"
-	})
-
-	var mixer = mixitup('.gallery__inner', {
-		load: {
-			filter: '.living'
-		}
-	})
-})
-
-var menuList = $('.menu__list-link')
-
-menuList.on('click', function () {
-	menuList.removeClass('menu__list-link--active')
-	$(this).addClass('menu__list-link--active')
-})
-
-Fancybox.bind('[data-fancybox]', {
-	src: 'https://www.youtube.com/watch?v=Nxg6UfofZX0&t=24508s',
-	type: 'video',
-	ratio: 16 / 10,
-	width: 640,
-	height: 360
 })
