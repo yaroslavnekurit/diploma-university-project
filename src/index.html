@@ -4,10 +4,10 @@
 
 <body>
 	<div class="wrapper">
-		<div class="container">
-			@@include('html/header.html',{})
-			<section class="main">
-				<section class="promo">
+		@@include('html/header.html',{})
+		<section class="main">
+			<section class="promo">
+				<div class="container">
 					<h1 class="promo__title lang" key="title">Портреты Белорусских Университетов</h1>
 					<div class="promo__bottom">
 						<h2 class="promo__subtitle lang" key="subtitle">Коллекция NFT</h2>
@@ -27,11 +27,83 @@
 								// БГУ </p>
 						</div>
 					</div>
-				</section>
+				</div>
 			</section>
+			<section class="gallery">
+				<div class="container">
+					<div class="gallery__slider">
+						<div class="gallery__slider-item">
+							<img class="gallery__slider-img" src="@img/univers/bguki.png" alt="">
+							<div class="gallery__slider-info">
+								<h3 class="gallery__slider-title">БГУКИ</h3>
+								<p class="gallery__slider-year">Дата основания: 1975 г.</p>
+								<p class="gallery__slider-tagline">Habemus talentis!</p>
+							</div>
+							<button class="gallery__slider-btn"><a class="gallery__slider-link"
+									href="">Подробнее</a></button>
+						</div>
+						<div class="gallery__slider-item">
+							<img class="gallery__slider-img" src="@img/univers/bgu.png" alt="">
+							<div class="gallery__slider-info">
+								<h3 class="gallery__slider-title">БГУ</h3>
+								<p class="gallery__slider-year">Дата основания: 1921 г.</p>
+								<p class="gallery__slider-tagline">Университет –
+									твой шаг в будущее!</p>
+							</div>
+							<button class="gallery__slider-btn"><a class="gallery__slider-link"
+									href="">Подробнее</a></button>
+						</div>
+						<div class="gallery__slider-item">
+							<img class="gallery__slider-img" src="@img/univers/bgmu.png" alt="">
+							<div class="gallery__slider-info">
+								<h3 class="gallery__slider-title">БГМУ</h3>
+								<p class="gallery__slider-year">Дата основания: 1921 г.</p>
+								<p class="gallery__slider-tagline">Arte et humanitate,
+									labore et scientia</p>
+							</div>
+							<button class="gallery__slider-btn"><a class="gallery__slider-link"
+									href="">Подробнее</a></button>
+						</div>
+						<div class="gallery__slider-item">
+							<img class="gallery__slider-img" src="@img/univers/bntu.png" alt="">
+							<div class="gallery__slider-info">
+								<h3 class="gallery__slider-title">БНТУ</h3>
+								<p class="gallery__slider-year">Дата основания: 1920 г.</p>
+								<p class="gallery__slider-tagline">Храним традиции!
+									Живем настоящим!
+									Творим будущее!</p>
+							</div>
+							<button class="gallery__slider-btn"><a class="gallery__slider-link"
+									href="">Подробнее</a></button>
+						</div>
+						<div class="gallery__slider-item">
+							<img class="gallery__slider-img" src="@img/univers/bgeu.png" alt="">
+							<div class="gallery__slider-info">
+								<h3 class="gallery__slider-title">БГЭУ</h3>
+								<p class="gallery__slider-year">Дата основания: 1933 г.</p>
+								<p class="gallery__slider-tagline"></p>
+							</div>
+							<button class="gallery__slider-btn"><a class="gallery__slider-link"
+									href="">Подробнее</a></button>
+						</div>
+						<div class="gallery__slider-item">
+							<img class="gallery__slider-img" src="@img/univers/bguir.png" alt="">
+							<div class="gallery__slider-info">
+								<h3 class="gallery__slider-title">БГУИР</h3>
+								<p class="gallery__slider-year">Дата основания: 1964 г.</p>
+								<p class="gallery__slider-tagline">БДУIР –
+									веды i стыль жыцця</p>
+							</div>
+							<button class="gallery__slider-btn"><a class="gallery__slider-link"
+									href="">Подробнее</a></button>
+						</div>
+					</div>
+				</div>
 
-			@@include('html/footer.html',{})
-		</div>
+			</section>
+		</section>
+
+		@@include('html/footer.html',{})
 		<script src="js/app.min.js"></script>
 </body>
 
