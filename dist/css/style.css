@@ -63,7 +63,7 @@ a {
 @font-face {
   font-family: Futura Bold;
   font-display: swap;
-  src: url("../fonts/Futura Bold font.woff2") format("woff2"), url("../fonts/Futura Bold font.woff") format("woff");
+  src: url("../fonts/Futura-Bold-03.woff2") format("woff2"), url("../fonts/Futura-Bold-03.woff") format("woff");
   font-weight: 600;
   font-style: norma;
 }
@@ -106,6 +106,7 @@ body {
   font-size: 16px;
   overflow-x: hidden;
   min-width: 320px;
+  background-color: #f8ebce;
 }
 
 .wrapper {
@@ -1589,14 +1590,18 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .promo__marquee {
-  position: relative;
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  z-index: 1;
   overflow: hidden;
-  border: 1px solid #000;
 }
 .promo__marquee .promo__marquee-inner {
   display: flex;
 }
 .promo__marquee .promo__marquee-text {
+  font-size: 30px;
+  color: #e8e8e8;
   white-space: nowrap;
   flex-shrink: 0;
   padding: 0 3px;
@@ -1613,13 +1618,16 @@ html.with-fancybox body.hide-scrollbar {
 }
 .header {
   padding-top: 50px;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
 }
 
 .header__nav {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  margin-bottom: 101px;
 }
 .header__nav .header__list {
   display: flex;
@@ -1680,4 +1688,64 @@ html.with-fancybox body.hide-scrollbar {
   content: "/";
   color: #581733;
   margin: 4px;
+}
+
+.promo {
+  position: relative;
+}
+.promo::after {
+  content: "";
+  display: block;
+  background-color: #581733;
+  width: 100%;
+  height: 101px;
+  position: absolute;
+  bottom: 0;
+}
+
+.promo {
+  padding-top: 101px;
+  padding-bottom: 11%;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: -10%;
+}
+.promo__title {
+  font-family: Futura, sans-serif;
+  font-weight: 600;
+  color: #581733;
+  font-size: 100px;
+  max-width: 810px;
+  margin: 0 auto 0 0;
+  margin-bottom: 66px;
+}
+.promo__bottom {
+  display: flex;
+  gap: 30px;
+  margin-bottom: auto;
+}
+.promo__subtitle {
+  color: #bb092e;
+  font-size: 60px;
+}
+.promo__btn {
+  font-size: 30px;
+  color: #f8ebce;
+  padding: 10px 40px;
+  background: linear-gradient(89.19deg, #581633 8.29%, #bb092e 77.41%);
+  box-shadow: 0px 0px 40px rgba(187, 9, 46, 0.8);
+  border-radius: 15px;
+  margin: auto 0;
+}
+
+.promo__btn:hover {
+  background: #bb092e;
+}
+.promo__btn:active {
+  box-shadow: 0px 0px 40px rgb(187, 9, 46);
+}
+
+.gallery {
+  padding-top: 76px;
 }
