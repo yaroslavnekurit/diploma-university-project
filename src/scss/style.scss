@@ -1,3 +1,10 @@
+@import 'reset';
+@import 'fonts.scss';
+@import 'global';
+@import 'reset';
+@import 'libs';
+@import 'vars';
+
 .promo__marquee {
 	position: relative;
 	overflow: hidden;
@@ -19,5 +26,80 @@
 	}
 	100% {
 		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+.header {
+	padding-top: 50px;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	max-width: 100%;
+	margin-bottom: 101px;
+	.header__list {
+		display: flex;
+	}
+	.header__list-lang {
+		display: -webkit-inline-box;
+	}
+	.header__list {
+		gap: 50px;
+	}
+	.header__list-lang {
+		gap: 4px;
+	}
+	.header__btn {
+		cursor: pointer;
+		color: #f8ebce;
+		padding: 10px 40px;
+		background-color: $title;
+		border-radius: 10px;
+		&:hover {
+			background-color: #861f4c;
+		}
+		&:active {
+			background-color: #bb092e;
+			box-shadow: 0px 0px 40px rgba(187, 9, 46, 0.2);
+		}
+	}
+	.header__link {
+		color: $title;
+		cursor: pointer;
+		&:hover {
+			color: #861f4c;
+		}
+		&:active {
+			color: #bb092e;
+		}
+	}
+	.translate {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		color: $title;
+		position: relative;
+		padding: 2px;
+		margin: 0;
+	}
+	.translate--active {
+		background-color: $title;
+		color: #f8ebce;
+		border-radius: 3px;
+	}
+	.header__lang-ru {
+		&::after {
+			content: '/';
+			color: $title;
+			margin: 4px;
+		}
+	}
+	.header__lang-by {
+		&::after {
+			content: '/';
+			color: $title;
+			margin: 4px;
+		}
 	}
 }

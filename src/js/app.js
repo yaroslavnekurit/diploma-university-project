@@ -49,3 +49,19 @@ $(function () {
 		})
 	})
 })
+
+let translate = document.querySelectorAll('.translate') // Возвращает список элементов
+let lastClicked = translate[0] // Первый элемент из списка (счет начинается с нуля)
+
+for (let i = 0; i < translate.length; i++) {
+	// Цикл берет и кругами выполняет код. На каждом круге, i является конкретным числом.
+	// Добавляется событие 'клик' на test[0], потом test[1], test[2]...
+	translate[i].addEventListener('click', function () {
+		lastClicked.classList.remove('translate--active')
+		this.classList.add('translate--active')
+		// Убрали класс с предыдущего кликнутого элемента, добавили на текущий
+		lastClicked = this
+		// Обновили значение переменной - теперь она ссылается на текущий элемент.
+		// Чтобы на следующем клике, убрать класс уже с этого.
+	})
+}
