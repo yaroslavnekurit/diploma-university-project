@@ -1588,31 +1588,63 @@ html.with-fancybox body.hide-scrollbar {
   pointer-events: none;
 }
 
-.promo__marquee {
-  position: absolute;
-  bottom: 35px;
-  left: 0;
-  z-index: 1;
-  overflow: hidden;
-}
-.promo__marquee .promo__marquee-inner {
-  display: flex;
-}
-.promo__marquee .promo__marquee-text {
-  font-size: 30px;
-  color: #e8e8e8;
-  white-space: nowrap;
-  flex-shrink: 0;
-  padding: 0 3px;
-  animation: promo__marquee 15s linear infinite;
+:root {
+  --height: 100px;
+  --speed: 30s;
 }
 
-@keyframes promo__marquee {
+.promo__marquee {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #581633;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: var(--height);
+  padding-left: 100%;
+}
+.promo__marquee .promo__marquee-inner {
+  height: var(--height);
+  line-height: var(--height);
+  white-space: nowrap;
+  padding-right: 100%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-name: promo__marquee-inner;
+  -webkit-animation-duration: var(--speed);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: promo__marquee-inner;
+  animation-duration: var(--speed);
+}
+.promo__marquee .promo__marquee-text {
+  display: inline-block;
+  font-size: 30px;
+  color: #e8e8e8;
+  padding: 0 3px;
+}
+
+@-webkit-keyframes promo__marquee-inner {
   0% {
-    transform: translateZ(0%);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
   }
   100% {
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+@keyframes promo__marquee-inner {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 .header {
@@ -1691,15 +1723,6 @@ html.with-fancybox body.hide-scrollbar {
 
 .promo {
   position: relative;
-}
-.promo::after {
-  content: "";
-  display: block;
-  background-color: #581733;
-  width: 100%;
-  height: 101px;
-  position: absolute;
-  bottom: 0;
 }
 
 .promo {
@@ -1816,6 +1839,10 @@ html.with-fancybox body.hide-scrollbar {
 
 .slick-dots li.slick-active button {
   background-color: #bb092e;
+}
+
+.slick-dots button {
+  cursor: pointer;
 }
 
 .slick-dots {
