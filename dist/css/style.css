@@ -1591,12 +1591,13 @@ html.with-fancybox body.hide-scrollbar {
 .faq__accordion {
   margin: auto 100px auto auto;
   width: 406px;
+  height: 550px;
 }
 
 .faq__accordion-item {
   list-style: none;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #e8e8e8;
 }
 
@@ -1833,7 +1834,8 @@ html.with-fancybox body.hide-scrollbar {
 }
 
 .gallery {
-  padding-top: 76px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .gallery__slider {
   margin-bottom: 50px;
@@ -1911,4 +1913,77 @@ html.with-fancybox body.hide-scrollbar {
 
 .slick-dots {
   margin-top: 41px;
+}
+
+.roadmap {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: url(../img/roadmap-bg.png);
+  background-position: center;
+  background-size: contain;
+}
+.roadmap__items {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.roadmap__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  gap: 20px;
+}
+.roadmap__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.roadmap__item {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: #581633;
+  border-radius: 15px;
+  padding: 30px 30px 26px 30px;
+}
+.roadmap__text {
+  color: #e8e8e8;
+  font-size: 16px;
+  margin-top: 31px;
+}
+.roadmap__progress {
+  color: #f8ebce;
+  font-size: 24px;
+  font-weight: 600;
+  width: 140px;
+  position: absolute;
+  left: 34%;
+  bottom: 15px;
+}
+.roadmap__number {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #581633;
+  background-color: #f8ebce;
+  border: solid #581633 2px;
+  font-size: 36px;
+  font-weight: 600;
+  align-items: center;
+  padding: 16px 29px;
+  top: -40px;
+  left: 160px;
+}
+
+.faq {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.faq__bg {
+  background-image: url(../img/faq-bg2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
