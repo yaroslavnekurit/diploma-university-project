@@ -37,7 +37,7 @@
 
 .faq__accordion {
 	margin: auto 100px auto auto;
-	width: 406px;
+	max-width: 406px;
 	height: 550px;
 }
 
@@ -86,7 +86,7 @@
 
 .faq__quetion::before {
 	content: '';
-	width: 406px;
+	width: 100%;
 	height: 3px;
 	background: #000;
 	position: absolute;
@@ -307,6 +307,10 @@
 .gallery {
 	padding-top: 70px;
 	padding-bottom: 70px;
+	background: url(@img/gallery-bg.png);
+	background-position: center;
+	background-size: cover;
+	box-shadow: inset 0px 123px 22px #f8ebce;
 	&__slider {
 		margin-bottom: 50px;
 	}
@@ -460,4 +464,69 @@
 	background-image: url(@img/faq-bg2.png);
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+//diploma
+
+.diploma {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background: url(@img/bg-diploma.png);
+	background-position: center;
+	background-size: cover;
+	box-shadow: inset 0px 123px 22px #f8ebce;
+	&__inner {
+		margin-top: 100px;
+		display: flex;
+		justify-content: space-between;
+		padding: 58px 35px;
+		align-items: center;
+		background-image: url(@img/diploma-in.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-bottom: 100px;
+	}
+	&__text {
+		max-width: 420px;
+		font-size: 16px;
+		color: #581633;
+	}
+	&__info {
+		display: flex;
+		margin: 0 auto;
+		background-color: #581633;
+		color: #e8e8e8;
+		justify-content: space-around;
+		align-items: center;
+		max-width: 1000px;
+		height: 100px;
+		border-radius: 30px;
+	}
+	&__info-item {
+		font-family: Futura Bold, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	}
+	&__number {
+		font-size: 45px;
+		text-align: center;
+	}
+	&__info-te {
+		font-size: 16px;
+	}
+}
+
+//footer
+
+.footer {
+	padding-top: 14px;
+	padding-bottom: 18px;
+	background-color: #581633;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__text {
+		font-size: 25px;
+		color: #e8e8e8;
+	}
 }

@@ -1590,7 +1590,7 @@ html.with-fancybox body.hide-scrollbar {
 
 .faq__accordion {
   margin: auto 100px auto auto;
-  width: 406px;
+  max-width: 406px;
   height: 550px;
 }
 
@@ -1639,7 +1639,7 @@ html.with-fancybox body.hide-scrollbar {
 
 .faq__quetion::before {
   content: "";
-  width: 406px;
+  width: 100%;
   height: 3px;
   background: #000;
   position: absolute;
@@ -1836,6 +1836,10 @@ html.with-fancybox body.hide-scrollbar {
 .gallery {
   padding-top: 70px;
   padding-bottom: 70px;
+  background: url(../img/gallery-bg.png);
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0px 123px 22px #f8ebce;
 }
 .gallery__slider {
   margin-bottom: 50px;
@@ -1986,4 +1990,65 @@ html.with-fancybox body.hide-scrollbar {
   background-image: url(../img/faq-bg2.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.diploma {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: url(../img/bg-diploma.png);
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0px 123px 22px #f8ebce;
+}
+.diploma__inner {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 58px 35px;
+  align-items: center;
+  background-image: url(../img/diploma-in.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 100px;
+}
+.diploma__text {
+  max-width: 420px;
+  font-size: 16px;
+  color: #581633;
+}
+.diploma__info {
+  display: flex;
+  margin: 0 auto;
+  background-color: #581633;
+  color: #e8e8e8;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px;
+  height: 100px;
+  border-radius: 30px;
+}
+.diploma__info-item {
+  font-family: Futura Bold, sans-serif, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.diploma__number {
+  font-size: 45px;
+  text-align: center;
+}
+.diploma__info-te {
+  font-size: 16px;
+}
+
+.footer {
+  padding-top: 14px;
+  padding-bottom: 18px;
+  background-color: #581633;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__text {
+  font-size: 25px;
+  color: #e8e8e8;
 }
