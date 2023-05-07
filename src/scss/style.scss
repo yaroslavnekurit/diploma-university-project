@@ -166,10 +166,19 @@
 
 .header {
 	padding-top: 50px;
-	position: absolute;
+	position: fixed;
 	z-index: 3;
 	left: 0;
 	right: 0;
+	transition: all 0.3s ease;
+}
+
+.header-nav--active {
+	padding-top: 25px;
+	transition: all 0.3s ease;
+	background-color: rgba(248, 235, 206, 0.5);
+	padding-bottom: 25px;
+	border-bottom: 1px solid #581633;
 }
 
 .header__nav {
@@ -307,10 +316,9 @@
 .gallery {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background: url(@img/gallery-bg.png);
+	background: url(@img/gallery-bg-3.png);
 	background-position: center;
 	background-size: cover;
-	box-shadow: inset 0px 123px 22px #f8ebce;
 	&__slider {
 		margin-bottom: 50px;
 	}
@@ -395,9 +403,10 @@
 .roadmap {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background: url(@img/roadmap-bg.png);
+	background: url(@img/roadmap-bg-2.png);
 	background-position: center;
 	background-size: contain;
+	box-shadow: inset 0px 100px 200px #f8ebce;
 	&__items {
 		margin-top: 80px;
 		display: flex;
@@ -471,10 +480,10 @@
 .diploma {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background: url(@img/bg-diploma.png);
+	background: url(@img/diploma-bg-2.png);
 	background-position: center;
 	background-size: cover;
-	box-shadow: inset 0px 123px 22px #f8ebce;
+	box-shadow: inset 0px 100px 200px #f8ebce;
 	&__inner {
 		margin-top: 100px;
 		display: flex;
@@ -491,6 +500,7 @@
 		max-width: 420px;
 		font-size: 16px;
 		color: #581633;
+		font-weight: 600;
 	}
 	&__info {
 		display: flex;

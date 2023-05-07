@@ -57,6 +57,7 @@
 		"mixitup": "^3.3.1",
 		"slick-carousel": "^1.8.1",
 		"swiper": "^9.0.5",
-		"vinyl-ftp": "^0.6.1"
+		"vinyl-ftp": "^0.6.1",
+		"page-scroll-to-id": "^1.6.8"
 	}
 }

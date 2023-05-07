@@ -13,6 +13,8 @@ import Swiper, { Autoplay, Navigation, Pagination } from 'swiper'
 
 const swiper = new Swiper()
 
+//translate
+
 var arrLang = {
 	en: {
 		collection: 'Collection',
@@ -66,6 +68,8 @@ for (let i = 0; i < translate.length; i++) {
 	})
 }
 
+//slider
+
 $('.gallery__slider').slick({
 	dots: true,
 	arrows: false,
@@ -100,4 +104,18 @@ $('.gallery__slider').slick({
 			}
 		}
 	]
+})
+
+//header-bg
+
+$(window).scroll(function (e) {
+	var height = $(this).scrollTop()
+	$('.header')[height >= 570 ? 'addClass' : 'removeClass']('header-nav--active')
+})
+
+//header-scroll
+
+$("a[rel='m_PageScroll2id']").mPageScroll2id({
+	scrollEasing: 'easeOutQuint',
+	scrollSpeed: 900
 })
