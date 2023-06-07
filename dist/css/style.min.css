@@ -1848,6 +1848,7 @@ html.with-fancybox body.hide-scrollbar {
   background: url(../img/gallery-bg-3.png);
   background-position: center;
   background-size: cover;
+  box-shadow: inset 0px -20px 40px 20px #f8ebce;
 }
 .gallery__slider {
   margin-bottom: 50px;
@@ -1973,6 +1974,7 @@ html.with-fancybox body.hide-scrollbar {
   position: absolute;
   left: 34%;
   bottom: 15px;
+  text-align: center;
 }
 .roadmap__number {
   position: absolute;
