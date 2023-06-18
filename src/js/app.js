@@ -269,7 +269,7 @@ $('.gallery__slider').slick({
 			}
 		},
 		{
-			breakpoint: 600,
+			breakpoint: 810,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2,
